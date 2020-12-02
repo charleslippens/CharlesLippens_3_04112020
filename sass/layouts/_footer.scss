@@ -1,0 +1,26 @@
+footer h2 {
+	font-family: shrikhandregular, sans-serif;
+}
+
+footer.command {
+	background-color: $color-bg;
+}
+
+footer {
+	background-color: $color-footer;
+	color: #fff;
+	padding: 25px 0px 25px 40px;
+		& .fa-utensils {
+			margin-right: 16px;
+		}
+		& .fa-hands-helping {
+			margin-right: 10px;
+		}
+		& a {
+			color: #fff;
+		}
+		@media (min-width: 768px)
+		{
+			text-align: center;
+		}
+}

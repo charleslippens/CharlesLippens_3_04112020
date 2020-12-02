@@ -1,0 +1,42 @@
+/* general */
+
+
+body {
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: roboto, sans-serif;
+	max-width: 1220px;
+}
+
+span {
+	font-weight: bold;
+}
+
+.accueil .fa-arrow-left {
+    display: none; 
+}
+
+#geolocalisation {
+	display: flex;
+	background-color: #ececec;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.fa-map-marker-alt {
+	margin-right: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.fa-arrow-left {
+	position: absolute;
+	left: 35px;
+	top: 20px;
+	z-index: 1;
+}
+

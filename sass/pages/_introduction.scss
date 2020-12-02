@@ -1,0 +1,142 @@
+/* Introduction */
+
+.introduction_page {
+	background-color: $color-bg;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 50px 50px 30px;
+}
+
+#titre_page {
+	text-align: center;
+
+}
+
+#titre_page h1 {
+	font-size: 1.8em;
+	padding-right: 40px;
+	padding-left: 40px;
+	@media (min-width: 768px) {
+		font-size: 2.5em;
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-bottom: 0px;
+	}
+}
+
+#titre_page p {
+	font-size: 1.3em;
+	margin-bottom: 40px;
+}
+
+
+.button {
+	background: $color-primary; /* anciens navigateurs */
+	background: linear-gradient(135deg, $color-secondary, $color-primary); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-radius: 30px;
+	box-shadow: 3px 3px 5px grey;
+	height: 50px;
+	width: 210px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+		&__name {
+			color: #fff;
+		}
+		&:hover {
+			filter: brightness(1.1);
+			box-shadow: 5px 5px 5px grey;
+		}
+}
+
+#fonctionnement h2 {
+	font-size: 1.8em;
+	padding-left: 37px;
+		@media (min-width: 992px) {
+			padding-left: 26px;
+		}
+}
+
+#all_etape {
+	display: flex;
+	flex-direction: column;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			margin-right: 20px;
+			margin-top: 35px;
+		}
+}
+
+.etape {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 96%;
+	margin-bottom: 30px;
+		
+		&__number {
+			background-color: $color-primary;
+			border-radius: 15px;
+			height: 30px;
+			width: 30px;
+			color: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			left: 15px;
+			
+		}
+		&__bg {
+			background-color: $color-bg;
+			display: flex;
+			align-items: center;
+			width: 85%;
+			height: 80px;
+			border-radius: 20px;
+			box-shadow: 5px 5px 5px #ececec;
+				& .fa-mobile-alt {
+					font-size: 1.5em;
+					opacity: 0.8;
+					margin-left: 50px;
+					margin-right: 9px;
+				}
+				& .fa-list-ul {
+					font-size: 1.5em;
+					opacity: 0.8;
+					margin-left: 50px;
+				}
+				& .etape__titre {
+					padding-left: 30px;
+					padding-right: 5px;
+					@media screen and (min-width: 768px) {
+						padding-left: 20px;
+					}
+				}
+		}
+		&__bg_2 {
+			background-color: lighten($color-primary, 35%);
+			display: flex;
+			align-items: center;
+			width: 85%;
+			height: 80px;
+			border-radius: 20px;
+			box-shadow: 5px 5px 5px #ececec;
+				& .fa-store {
+					font-size: 1.5em;
+					color: $color-primary;
+					opacity: 0.8;
+					margin-left: 50px;
+					margin-right: -5px;
+				}
+				& .etape__titre {
+					padding-left: 30px;
+					padding-right: 5px;
+					@media screen and (min-width: 768px) {
+						padding-left: 20px;
+					}
+				}
+		}
+
+}
