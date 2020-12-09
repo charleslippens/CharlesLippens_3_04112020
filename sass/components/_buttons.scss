@@ -1,6 +1,11 @@
+/* Bouton */
 .button {
 	background: $color-primary; /* anciens navigateurs */
-	background: linear-gradient(135deg, $color-secondary, $color-primary); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background: -moz-linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background: -webkit-linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background: -ms-linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background: -o-linear-gradient(to bottom right, $color-secondary, $color-primary);
 	border-radius: 30px;
 	box-shadow: 3px 3px 5px grey;
 	height: 50px;
@@ -8,10 +13,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-		&__name {
+		&__name{
 			color: #fff;
 		}
-		&:hover {
+		&:hover{
 			filter: brightness(1.1);
 			box-shadow: 5px 5px 5px grey;
 		}

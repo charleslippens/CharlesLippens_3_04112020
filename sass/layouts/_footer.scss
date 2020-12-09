@@ -1,15 +1,7 @@
-footer h2 {
-	font-family: shrikhandregular, sans-serif;
-}
-
-footer.command {
-	background-color: $color-bg;
-}
-
 footer {
 	background-color: $color-footer;
 	color: #fff;
-	padding: 25px 0px 25px 40px;
+	padding: 15px 0px 25px 20px;
 		& .fa-utensils {
 			margin-right: 16px;
 		}
@@ -18,6 +10,17 @@ footer {
 		}
 		& a {
 			color: #fff;
+			font-size: 0.8em;
+		}
+		& p {
+			margin: 0px;
+		}
+		& h2 {
+			font-family: shrikhandregular, sans-serif;
+			font-size: 1em;
+		}	
+		& .command {
+			background-color: $color-bg;
 		}
 		@media (min-width: 768px)
 		{

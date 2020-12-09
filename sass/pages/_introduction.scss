@@ -10,45 +10,24 @@
 
 #titre_page {
 	text-align: center;
-
-}
-
-#titre_page h1 {
-	font-size: 1.8em;
-	padding-right: 40px;
-	padding-left: 40px;
-	@media (min-width: 768px) {
-		font-size: 2.5em;
-		padding-right: 10px;
-		padding-left: 10px;
-		margin-bottom: 0px;
-	}
-}
-
-#titre_page p {
-	font-size: 1.3em;
-	margin-bottom: 40px;
-}
-
-
-.button {
-	background: $color-primary; /* anciens navigateurs */
-	background: linear-gradient(135deg, $color-secondary, $color-primary); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	border-radius: 30px;
-	box-shadow: 3px 3px 5px grey;
-	height: 50px;
-	width: 210px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-		&__name {
-			color: #fff;
+	&__h1 {
+		font-size: 1.8em;
+		padding-right: 40px;
+		padding-left: 40px;
+		@media (min-width: 768px) 
+		{
+			font-size: 2.5em;
+			padding-right: 10px;
+			padding-left: 10px;
+			margin-bottom: 0px;
 		}
-		&:hover {
-			filter: brightness(1.1);
-			box-shadow: 5px 5px 5px grey;
+		}
+	&__p{
+			font-size: 1em;
+			margin-bottom: 40px;
 		}
 }
+
 
 #fonctionnement h2 {
 	font-size: 1.8em;

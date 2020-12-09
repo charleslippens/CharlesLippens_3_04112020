@@ -1,7 +1,7 @@
 /* chargement spinner */
 
 
-.spinner_container {
+.spinner {
 	display: flex;
 	justify-content: center;
 	align-items:center;
@@ -11,21 +11,28 @@
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	animation: spinner_bg 3s;
-}
-
-.spinner {
-	position: relative;
-	height: 100px;
-	width: 100px;
-}
-
-.spinner div {
-	position: absolute;
-    width: 10px;
-    height: 10px;
-  	border-radius: 50%;
-  	animation: spinner 1.5s linear 2;
+  animation: spinner_bg 3s;
+  &__container {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    & div {
+      position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        animation: spinner 1.5s linear 2;
+          &:nth-child(1) {
+            animation-delay: 0s;
+            top: 42px;
+            left: 84px;}
+          &:nth-child(2) {
+            animation-delay: -0.1s;
+            top: 21px;
+            left: 79px;
+            }
+        }
+  }
 }
 
 
@@ -50,12 +57,12 @@
   0%, 20%, 80% {
     
     background: $color-bg;
-    opacity: 0.6;
+    opacity: 0.75;
     z-index: 1;
   }
   50% {
     background: $color-bg;
-    opacity: 0.6;
+    opacity: 0.75;
     z-index: 1;
   }
   100% {
@@ -64,64 +71,54 @@
   }
 }
 
-.spinner div:nth-child(1) {
-  animation-delay: 0s;
-  top: 42px;
-  left: 84px;
-}
 
-.spinner div:nth-child(2) {
-  animation-delay: -0.1s;
-  top: 21px;
-  left: 79px;
-}
-.spinner div:nth-child(3) {
+.spinner__container div:nth-child(3) {
   animation-delay: -0.2s;
   top: 6px;
   left: 64px;
 }
-.spinner div:nth-child(4) {
+.spinner__container div:nth-child(4) {
   animation-delay: -0.3s;
   top: 0px;
   left: 43px;
 }
 
-.spinner div:nth-child(5) {
+.spinner__container div:nth-child(5) {
   animation-delay: -0.4s;
   top: 6px;
   left: 23px;
 }
-.spinner div:nth-child(6) {
+.spinner__container div:nth-child(6) {
   animation-delay: -0.5s;
   top: 21px;
   left: 6px;
 }
-.spinner div:nth-child(7) {
+.spinner__container div:nth-child(7) {
   animation-delay: -0.6s;
   top: 42px;
   left: 1px;
 }
-.spinner div:nth-child(8) {
+.spinner__container div:nth-child(8) {
   animation-delay: -0.7s;
   top: 64px;
   left: 6px;
 }
-.spinner div:nth-child(9) {
+.spinner__container div:nth-child(9) {
   animation-delay: -0.8s;
   top: 77px;
   left: 23px;
 }
-.spinner div:nth-child(10) {
+.spinner__container div:nth-child(10) {
   animation-delay: -0.9s;
   top: 84px;
   left: 43px;
 }
-.spinner div:nth-child(11) {
+.spinner__container div:nth-child(11) {
   animation-delay: -1s;
   top: 77px;
   left: 64px;
 }
-.spinner div:nth-child(12) {
+.spinner__container div:nth-child(12) {
   animation-delay: -1.1s;
   top: 64px;
   left: 79px;

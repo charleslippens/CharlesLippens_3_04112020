@@ -1,46 +1,31 @@
 /* Page menu */
 
 @keyframes fondu {
-    0% {
-        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-        -webkit-filter: blur(40px);
-                filter: blur(40px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-                transform: translateY(0) scaleY(1) scaleX(1);
-        -webkit-transform-origin: 50% 50%;
-                transform-origin: 50% 50%;
-        -webkit-filter: blur(0);
-                filter: blur(0);
-        opacity: 1;}
+	0% {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	
+	100% {
+		opacity:1;
+		transform: translateY(0px);
+
+	}
 }
 
 
 .titre_item {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	&__item p, h3{
+		-webkit-line-clamp: 1;
+		-webkit-box-orient: vertical;
+		display: -webkit-box;
+		overflow: hidden;
+		text-overflow: ellipsis;}
 }
 
-.titre_item p {
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	display: -webkit-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
 
-.titre_item h3 {
-	-webkit-line-clamp: 1;
-	-webkit-box-orient: vertical;
-	display: -webkit-box;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
 .select {
 	background-color: $color-tertiary;
 	width: 60px;
@@ -95,31 +80,23 @@
 	padding-right: 50px;
 	& h1 {
 		font-family: shrikhandregular, sans-serif;
+		font-size: 25px;
 	}
 }
 
 .sous_menu_titre {
 	padding-left: 38px;
+	&:after {
+		content: "";
+		display: block;
+		background-color: $color-tertiary;
+		height: 4px;
+		width: 40px;
+		margin-top: -10px;
+		margin-bottom: 20px;
+}
 }
 
-.sous_menu--description {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	transform-origin: left 90%;
-	transition: width 800ms;
-
-}
-
-.sous_menu_titre::after {
-	content: "";
-	display: block;
-	background-color: $color-tertiary;
-	height: 4px;
-	width: 40px;
-	margin-top: -10px;
-	margin-bottom: 20px;
-}
 
 .sous_menu {
 	display: flex;
@@ -154,11 +131,18 @@
 		&__item p, h2 {
 			margin-top: 0px;
 			margin-bottom: 0px;
-			font-size: 14px;
+			font-size: 16px;
 		}
 		&--price {
 			display: flex;
 			align-items: flex-end;
 			padding-bottom: 10px;
+		}
+		&--description {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			transform-origin: left 90%;
+			transition: width 800ms;
 		}
 }
