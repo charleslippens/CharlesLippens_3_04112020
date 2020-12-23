@@ -461,7 +461,7 @@ footer .command {
   align-items: center;
   animation: fondu 3s;
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   position: relative;
 }
 .sous_menu__item:hover .select {

@@ -78,7 +78,7 @@
 			align-items: center;
 			animation: fondu 3s;
 			animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-			animation-fill-mode: forwards;
+			animation-fill-mode: both;
 			position: relative;
 				&:hover .select {
 					transform: scaleX(1);
