@@ -1,64 +1,21 @@
-/* Page menu */
-
 @keyframes fondu {
 	0% {
-		opacity: 0;
-		transform: translateY(10px);
-	}
-	
-	100% {
-		opacity:1;
-		transform: translateY(0px);
-
-	}
+		transform: scale(0)
+	  }
+	  100% {
+		transform: scale(1);
+	  }
 }
-
-
-.titre_item {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	&__item p, h3{
-		-webkit-line-clamp: 1;
-		-webkit-box-orient: vertical;
-		display: -webkit-box;
-		overflow: hidden;
-		text-overflow: ellipsis;}
-}
-
-
-.select {
-	background-color: $color-tertiary;
-	width: 60px;
-	height: 70px;
-	border-radius: 0 10px 10px 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	opacity: 0;
-	transform: scaleX(0);
-	transition: transform 800ms;
-	transform-origin: right 50%;
-	position: absolute;
-	right: 0px;
-		& .fa-check-circle {
-			color: #fff;
-			transform: rotate(90deg);
-		}
-}
-
-.command {
-	display: flex;
-	justify-content: center;
-	margin-top: 50px;
-}
-
 
 .menu_pict {
 	width: 100%;
-	height: 300px;
+	height: 500px;
 	object-fit: cover;
 	position: relative;
 	z-index: -1;
+		@media screen and (min-width: 992px){
+			height: 600px;
+		}
 }
 
 .menu_background {
@@ -78,33 +35,37 @@
 	align-items: baseline;
 	padding-left: 35px;
 	padding-right: 50px;
+		@media screen and (min-width: 768px){
+			padding-left: 52px;
+		}
 	& h1 {
 		font-family: shrikhandregular, sans-serif;
-		font-size: 25px;
-	}
+		}
 }
 
 .sous_menu_titre {
 	padding-left: 38px;
-	&:after {
-		content: "";
-		display: block;
-		background-color: $color-tertiary;
-		height: 4px;
-		width: 40px;
-		margin-top: -10px;
-		margin-bottom: 20px;
-}
+		@media screen and (min-width: 768px) {
+			padding-left: 50px;
+		}
 }
 
+.sous_menu_titre::after {
+	content: "";
+	display: block;
+	background-color: $color-tertiary;
+	height: 4px;
+	width: 40px;
+	margin-top: -10px;
+	margin-bottom: 20px;
+}
 
 .sous_menu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 		&__item {
-			display: flex;
-			align-items: center;
 			background-color: #fff;
 			border-radius: 10px;
 			box-shadow: 5px 5px 5px #ececec;
@@ -113,36 +74,95 @@
 			margin-bottom: 20px;
 			padding-left: 10px;
 			padding-right: 10px;
-			animation: fondu 3s 200ms;
-			animation-fill-mode: backwards;
+			display: flex;
+			align-items: center;
+			animation: fondu 3s;
+			animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+			animation-fill-mode: forwards;
 			position: relative;
 				&:hover .select {
 					transform: scaleX(1);
-					opacity: 1;					
+					opacity: 1;		
 				}
 				&:hover .sous_menu--description {
 					width: 83%;
 				}
 				&:hover .fa-check-circle {
 					transform: rotate(-360deg);
-					transition: transform 800ms;
 				}
 		}
 		&__item p, h2 {
 			margin-top: 0px;
 			margin-bottom: 0px;
-			font-size: 16px;
+			font-size: 18px;
 		}
+
 		&--price {
 			display: flex;
 			align-items: flex-end;
 			padding-bottom: 10px;
 		}
-		&--description {
-			display: flex;
-			justify-content: space-between;
-			width: 100%;
-			transform-origin: left 90%;
-			transition: width 800ms;
+}
+.sous_menu--description {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	transform-origin: left 90%;
+	transition: width 800ms;
+
+}
+
+.titre_item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.titre_item p {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.titre_item h2 {
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.select {
+	background-color: $color-tertiary;
+	width: 60px;
+	height: 70px;
+	border-radius: 0 10px 10px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transform: scaleX(0);
+	transition: transform 800ms;
+	transform-origin: right 50%;
+	position: absolute;
+    -webkit-transition: all 0.8s;
+	right: 0px;
+		& .fa-check-circle {
+			color: #fff;
+			transform: rotate(180deg);
+			transition: 1s;
 		}
 }
+
+.command {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+@for $i from 1 through 10 {
+	.delay-#{$i} {
+	  animation-delay:  #{$i/10}s;
+	}
+  }
+

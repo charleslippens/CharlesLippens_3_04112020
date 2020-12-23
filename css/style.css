@@ -376,61 +376,25 @@ footer .command {
   }
 }
 
-/* Page menu */
 @keyframes fondu {
   0% {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: scale(0);
   }
   100% {
-    opacity: 1;
-    transform: translateY(0px);
+    transform: scale(1);
   }
 }
-.titre_item {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.titre_item__item p, .titre_item h3 {
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.select {
-  background-color: #99E2D0;
-  width: 60px;
-  height: 70px;
-  border-radius: 0 10px 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transform: scaleX(0);
-  transition: transform 800ms;
-  transform-origin: right 50%;
-  position: absolute;
-  right: 0px;
-}
-.select .fa-check-circle {
-  color: #fff;
-  transform: rotate(90deg);
-}
-
-.command {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
 .menu_pict {
   width: 100%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   position: relative;
   z-index: -1;
+}
+@media screen and (min-width: 992px) {
+  .menu_pict {
+    height: 600px;
+  }
 }
 
 .menu_background {
@@ -451,15 +415,25 @@ footer .command {
   padding-left: 35px;
   padding-right: 50px;
 }
+@media screen and (min-width: 768px) {
+  .menu_titre {
+    padding-left: 52px;
+  }
+}
 .menu_titre h1 {
   font-family: shrikhandregular, sans-serif;
-  font-size: 25px;
 }
 
 .sous_menu_titre {
   padding-left: 38px;
 }
-.sous_menu_titre:after {
+@media screen and (min-width: 768px) {
+  .sous_menu_titre {
+    padding-left: 50px;
+  }
+}
+
+.sous_menu_titre::after {
   content: "";
   display: block;
   background-color: #99E2D0;
@@ -475,8 +449,6 @@ footer .command {
   align-items: center;
 }
 .sous_menu__item {
-  display: flex;
-  align-items: center;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #ececec;
@@ -485,8 +457,11 @@ footer .command {
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  animation: fondu 3s 200ms;
-  animation-fill-mode: backwards;
+  display: flex;
+  align-items: center;
+  animation: fondu 3s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: forwards;
   position: relative;
 }
 .sous_menu__item:hover .select {
@@ -498,24 +473,113 @@ footer .command {
 }
 .sous_menu__item:hover .fa-check-circle {
   transform: rotate(-360deg);
-  transition: transform 800ms;
 }
 .sous_menu__item p, .sous_menu h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .sous_menu--price {
   display: flex;
   align-items: flex-end;
   padding-bottom: 10px;
 }
+
 .sous_menu--description {
   display: flex;
   justify-content: space-between;
   width: 100%;
   transform-origin: left 90%;
   transition: width 800ms;
+}
+
+.titre_item {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.titre_item p {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titre_item h2 {
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select {
+  background-color: #99E2D0;
+  width: 60px;
+  height: 70px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: transform 800ms;
+  transform-origin: right 50%;
+  position: absolute;
+  -webkit-transition: all 0.8s;
+  right: 0px;
+}
+.select .fa-check-circle {
+  color: #fff;
+  transform: rotate(180deg);
+  transition: 1s;
+}
+
+.command {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+.delay-5 {
+  animation-delay: 0.5s;
+}
+
+.delay-6 {
+  animation-delay: 0.6s;
+}
+
+.delay-7 {
+  animation-delay: 0.7s;
+}
+
+.delay-8 {
+  animation-delay: 0.8s;
+}
+
+.delay-9 {
+  animation-delay: 0.9s;
+}
+
+.delay-10 {
+  animation-delay: 1s;
 }
 
 /* Restaurants */
