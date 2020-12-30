@@ -10,8 +10,8 @@
 
 #titre_page {
 	text-align: center;
-	&__h1 {
-		font-size: 1.8em;
+	& h1 {
+		font-size: 1.3em;
 		padding-right: 40px;
 		padding-left: 40px;
 		@media (min-width: 768px) 
@@ -22,19 +22,24 @@
 			margin-bottom: 0px;
 		}
 		}
-	&__p{
+	& p{
 			font-size: 1em;
-			margin-bottom: 40px;
+			margin-bottom: 20px;
 		}
 }
 
 
-#fonctionnement h2 {
-	font-size: 1.8em;
-	padding-left: 37px;
+#fonctionnement {
+	max-width:1220px;
+	 margin:auto;
+	& h2 {
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-left: 37px;
 		@media (min-width: 992px) {
 			padding-left: 26px;
 		}
+	}
 }
 
 #all_etape {
@@ -78,16 +83,17 @@
 				& .fa-mobile-alt {
 					font-size: 1.5em;
 					opacity: 0.8;
-					margin-left: 50px;
+					margin-left: 35px;
 					margin-right: 9px;
 				}
 				& .fa-list-ul {
 					font-size: 1.5em;
 					opacity: 0.8;
-					margin-left: 50px;
+					margin-left: 35px;
 				}
 				& .etape__titre {
-					padding-left: 30px;
+					font-size: 15px;
+					padding-left: 15px;
 					padding-right: 5px;
 					@media screen and (min-width: 768px) {
 						padding-left: 20px;
@@ -106,11 +112,12 @@
 					font-size: 1.5em;
 					color: $color-primary;
 					opacity: 0.8;
-					margin-left: 50px;
+					margin-left: 35px;
 					margin-right: -5px;
 				}
 				& .etape__titre {
-					padding-left: 30px;
+					font-size: 15px;
+					padding-left: 15px;
 					padding-right: 5px;
 					@media screen and (min-width: 768px) {
 						padding-left: 20px;

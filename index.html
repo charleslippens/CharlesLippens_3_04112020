@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css">
@@ -8,7 +9,10 @@
 		<meta name="description" content="Ohmyfood site de réservation de menu"> 
 		<title>Oh my food Accueil</title>
 	</head>
+
 	<body>
+		
+		<!-- Spinner-->
 		<div class="spinner">
 			<div class="spinner__container">
 				<div></div>
@@ -26,8 +30,7 @@
 			</div>
 		</div>
 				
-		<!-- Entete-->
-
+		<!-- Entete -->
 		<header>
 			<nav class="accueil">
 				<i class="fas fa-arrow-left fa-2x"></i>
@@ -35,9 +38,9 @@
 			</nav>
 		</header>
 
-		<!--Contenu-->
-
+		<!-- Contenu -->
 		<main>
+			<!-- Localisation -->
 			<div id="geolocalisation">
 				<i class="fas fa-map-marker-alt"></i>
 				<p>
@@ -52,61 +55,58 @@
 					</p>
 				</div>
 				<a href="#" class="button">
-				<div class="button__name">
-					<strong>Explorer nos restaurants</strong>
-				</div>
-			</a>
-		</section>
-
-		<!-- Fonctionnement -->
-
-		<section id="fonctionnement">
-			<h2>Fonctionnement</h2>
-			<div id="all_etape">
-				<div class="etape">
-					<div class="etape__number">
-						<strong>1</strong>
+					<div class="button__name">
+						<strong>Explorer nos restaurants</strong>
 					</div>
-					<div class="etape__bg">
-						<i class="fas fa-mobile-alt"></i>
-						<div class="etape__titre">
-							<h3>Choisissez un restaurant</h3>
+				</a>
+			</section>
+
+			<!-- Fonctionnement -->
+			<section id="fonctionnement">
+				<h2>Fonctionnement</h2>
+				<div id="all_etape">
+					<div class="etape">
+						<div class="etape__number">
+							<strong>1</strong>
+						</div>
+						<div class="etape__bg">
+							<i class="fas fa-mobile-alt"></i>
+							<div class="etape__titre">
+								<h3>Choisissez un restaurant</h3>
+							</div>
+						</div>
+					</div>
+					<div class="etape">
+						<div class="etape__number">
+							<strong>2</strong>
+						</div>
+						<div class="etape__bg">
+							<i class="fas fa-list-ul"></i>
+							<div class="etape__titre">
+								<h3>Composez votre menu</h3>
+							</div>
+						</div>
+					</div>
+					<div class="etape">
+						<div class="etape__number">
+							<strong>3</strong>
+						</div>
+						<div class="etape__bg_2">
+							<i class="fas fa-store"></i>
+							<div class="etape__titre">
+								<h3>  Dégustez au restaurant</h3>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="etape">
-					<div class="etape__number">
-						<strong>2</strong>
-					</div>
-					<div class="etape__bg">
-						<i class="fas fa-list-ul"></i>
-						<div class="etape__titre">
-							<h3>Composez votre menu</h3>
-						</div>
-					</div>
-				</div>
-				<div class="etape">
-					<div class="etape__number">
-						<strong>3</strong>
-					</div>
-					<div class="etape__bg_2">
-						<i class="fas fa-store"></i>
-						<div class="etape__titre">
-							<h3>  Dégustez au restaurant</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Restaurants -->
-
-		<section id="restaurant">
-			<div id="titre_restaurant">
-				<h2>Restaurants</h2>
-			</div>
-			<div id="all_vignette_rest">
-				
+			<!-- Restaurants -->
+			<section id="restaurant">
+				<div id="titre_restaurant">
+					<h2>Restaurants</h2>
+				</div>
+				<div id="all_vignette_rest">				
 					<a href="palette_du_gout.html" class="fond_vignette_rest">
 						<div class="new">
 							<div class="new__sticker">
@@ -117,21 +117,18 @@
 						<div class="description_vignette_rest">
 							<div class="titre_vignette_rest">
 								<h3>La palette du goût</h3>
-								<p>
-									Ménilmontant
-								</p>
+								<p>	Ménilmontant</p>
 							</div>
 							<div class="favorite">
 								<div class="heart">
 									<i class="far fa-heart fa-2x"></i>
 								</div>
 								<div class="favorite__bg">
-									<i class="fas fa-heart fa-2x"></i>
-								
+									<i class="fas fa-heart fa-2x"></i>								
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
+					</a>
 					<a href="la_note_enchantée.html" class="fond_vignette_rest">
 						<div class="new">
 							<div class="new__sticker">
@@ -142,9 +139,7 @@
 						<div class="description_vignette_rest">
 							<div class="titre_vignette_rest">
 								<h3>La note enchantée</h3>
-								<p>
-									Charonne
-								</p>
+								<p>Charonne	</p>
 							</div>
 							<div class="favorite">
 								<div class="heart">
@@ -155,15 +150,13 @@
 								</div>
 							</div>
 						</div>
-				</a>
+					</a>
 					<a href="a_la_francaise.html" class="fond_vignette_rest">
 						<img class="rest_pict" src="images/restaurants/a_la_francaise.jpg" alt=photo_a_la_francaise/>
 						<div class="description_vignette_rest">
 							<div class="titre_vignette_rest">
 								<h3>À la française</h3>
-								<p>
-									Cité Rouge
-								</p>
+								<p>Cité Rouge</p>
 							</div>
 							<div class="favorite">
 								<div class="heart">
@@ -174,15 +167,13 @@
 								</div>
 							</div>
 						</div>
-				</a>
+					</a>
 					<a href="le_délice_des_sens.html" class="fond_vignette_rest">
 						<img class="rest_pict" src="images/restaurants/delice_sens.jpg" alt=photo_delice_sens/>
 						<div class="description_vignette_rest">
 							<div class="titre_vignette_rest">
 								<h3>Le délice des sens</h3>
-								<p>
-									Folie-Méricourt
-								</p>
+								<p>Folie-Méricourt</p>
 							</div>
 							<div class="favorite">
 								<div class="heart">
@@ -193,29 +184,33 @@
 								</div>
 							</div>
 						</div>
+					</a>
+				</div>
+			</section>
+		</main>
+
+		<!-- Pied de page -->
+		<footer>
+			<div>
+				<h2>Ohmyfood</h2>
+			<p>
+				<a href="#">
+					<strong><i class="fas fa-utensils"></i>Proposer un restaurant</strong>
 				</a>
+			</p>
+			<p>
+				<a href="#">
+					<strong><i class="fas fa-hands-helping"></i>Devenir partenaire</strong>
+				</a>
+			</p>
+			<p>
+				<a href="#"><strong>Mentions légales</strong></a>
+			</p>
+			<p>
+				<a href="mailto:xxxx@yz.fr"><strong>Contact</strong></a>
+			</p>
 			</div>
-		</section>
-	</main>
-	<!-- Pied de page -->
-	<footer>
-		<h2>Ohmyfood</h2>
-		<p>
-			<a href="#">
-				<strong><i class="fas fa-utensils"></i>Proposer un restaurant</strong>
-			</a>
-		</p>
-		<p>
-			<a href="#">
-				<strong><i class="fas fa-hands-helping"></i>Devenir partenaire</strong>
-			</a>
-		</p>
-		<p>
-			<a href="#"><strong>Mentions légales</strong></a>
-		</p>
-		<p>
-			<a href="mailto:xxxx@yz.fr"><strong>Contact</strong></a>
-		</p>
-	</footer>
-</body>
+		</footer>
+		
+	</body>
 </html>
