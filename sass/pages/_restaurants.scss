@@ -2,12 +2,12 @@
 
 .fond_vignette_rest {
 	background-color: #fff;
-	width: 85%;
+	width: 100%;
 	height: 250px;
 	border-radius: 20px;
 	display: flex;
 	flex-direction: column;
-	margin: 20px auto;
+	margin: 20px 0 0 0;
     box-shadow: 3px 3px 8px 1px #BDBDBD;
 	position:relative;
 	@media (min-width: 992px) 
@@ -17,11 +17,11 @@
 	}
 }
 
-.rest_pict {
+.rest_image {
 	width: 100%;
 	height: 170px;
 	border-radius: 20px 20px 0 0;
-	object-fit: cover;
+	object-fit:cover;
 	@media (min-width: 992px) 
 	{
 		height: 260px;
@@ -38,24 +38,27 @@
 
 #restaurant {
 	background-color: $color-bg;
-	padding-bottom: 20px;
+	padding-bottom: 60px;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
 	max-width: 1220px;
 	margin: auto;
 }
 
 #titre_restaurant h2 {
 	font-size: 1.5em;
-	padding-left: 37px;
-	padding-top: 40px;
+	margin: 0px;
 }
 
-#all_vignette_rest {
+#groupe_vignettes_rest {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	@media  (min-width: 992px)
 	{
 		flex-direction: row;
+		justify-content:space-around;
 		flex-wrap: wrap;
 	}
 }
@@ -68,13 +71,13 @@
 		margin-bottom: 0;
 	}
 	& h3 {
-		margin-top: 10px;
+		margin-top: 15px;
 		font-size: 1.2em;
 	}
 }
 
-.new {
-	&__sticker {
+.nouveau {
+	&__etiquette {
 		background-color: $color-tertiary;
 		color: darken($color-tertiary, 30%);
 		border-radius: 3px;
@@ -96,13 +99,11 @@
 	100% {
 		opacity: 1
 	}
-
 }
 
-.favorite {
+.favori {
 	padding-top: 20px;
 	position: relative;
-
 	.heart .fa-heart {
 		color:$color-footer;
 	}
@@ -111,7 +112,6 @@
 		top: 20px;
 		opacity: 0;
 	}
-
 	&__bg .fa-heart::before {
 		background: linear-gradient(to bottom, $color-primary, $color-secondary); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		background: -webkit-linear-gradient(to bottom, $color-primary, $color-secondary); /* Chrome10-25,Safari5.1-6 */
@@ -119,9 +119,8 @@
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
-	
 	&:hover {
-		& .favorite__bg {
+		& .favori__bg {
 			animation: fondu_heart 1800ms;
 			animation-fill-mode: forwards;
 		}

@@ -1,31 +1,43 @@
+/* Bas de page */
+
 footer {
 	background-color: $color-footer;
+	height: 145px;
 	color: #fff;
-	padding: 15px 0px 25px 20px;
-		& .fa-utensils {
-			margin-right: 16px;
+	padding: 25px 0px 25px 25px;
+	& ul {
+		padding:0px;
+		& li {
+			list-style-type: none;
+			& .fa-utensils {
+				margin-right: 16px;
+			}
+			& .fa-hands-helping {
+				margin-right: 10px;
+			}
 		}
-		& .fa-hands-helping {
-			margin-right: 10px;
-		}
-		& a {
-			color: #fff;
-			font-size: 1em;
-		}
-		& p {
-			margin: 5px;
-		}
-		& h2 {
-			font-family: Shrikhand, cursive;
-			font-weight: lighter;
-
-			font-size: 1em;
-		}	
-		& .command {
-			background-color: $color-bg;
-		}
-		@media (min-width: 768px)
-		{
-			text-align: center;
-		}
+	}
+	& a {
+		color: #fff;
+		font-size: 0.8em;
+	}
+	& p {
+		font-size: 1.2em;
+		font-weight: 500;
+		margin: 0 0 0.4em 0;
+	}
+	& h2 {
+		font-family: Shrikhand, sans-serif;
+		font-size: 1em;
+		letter-spacing: 0.1em;
+		font-weight:500;
+		margin: 0 0 1.2em 0;
+	}	
+	& .command {
+		background-color: $color-bg;
+	}
+	@media (min-width: 768px)
+	{
+		text-align: center;
+	}
 }

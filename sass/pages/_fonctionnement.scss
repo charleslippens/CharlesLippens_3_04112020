@@ -1,0 +1,109 @@
+/* Fonctionnement */
+
+#fonctionnement {
+	max-width:1220px;
+	padding-top: 30px;
+	padding-left: 20px;
+	padding-right: 10px;
+	height:390px;
+	margin:auto;
+	@media (min-width: 768px) {
+		height: 250px;}
+	& h2 {
+		font-weight: bold;
+		font-size: 1.5em;
+		@media (min-width: 992px) {
+			padding-left: 0px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+#groupe_etape {
+	display: flex;
+	flex-direction: column;
+		@media (min-width: 768px) {
+			flex-direction: row;
+			justify-content:space-between;
+			margin-right: 20px;
+			margin-top: 35px;
+		}
+}
+
+.etape {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 96%;
+	margin-bottom: 25px;
+	@media (min-width: 768px) {
+		width: 30%;
+	}		
+	&__indice {
+		background-color: $color-primary;
+		border-radius: 15px;
+		height: 30px;
+		width: 30px;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		left: 0px;
+	}
+	&__bg {
+		background-color: $color-bg;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 75px;
+		margin-left: -15px;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #ececec;
+		& .fa-mobile-alt {
+			font-size: 1.5em;
+			opacity: 0.8;
+			margin-left: 35px;
+			margin-right: 9px;
+		}
+		& .fa-list-ul {
+			font-size: 1.5em;
+			opacity: 0.8;
+			margin-left: 35px;
+		}
+		& .etape__titre {
+			font-size: 15px;
+			padding-left: 15px;
+			padding-right: 5px;
+			@media screen and (min-width: 768px) {
+				padding-left: 20px;
+			}
+		}
+	}
+	&__bg2 {
+		background-color: lighten($color-primary, 35%);
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 75px;
+		margin-left: -15px;
+		border-radius: 20px;
+		box-shadow: 5px 5px 5px #ececec;
+		& .fa-store {
+			font-size: 1.5em;
+			color: $color-primary;
+			opacity: 0.8;
+			margin-left: 35px;
+			margin-right: -5px;
+		}
+		& .etape__titre {
+			font-size: 15px;
+			padding-left: 15px;
+			padding-right: 5px;
+			@media screen and (min-width: 768px) {
+				padding-left: 20px;
+			}
+		}
+	}
+
+}

@@ -8,28 +8,34 @@
 		<meta name="description" content="Ohmyfood site de réservation de menu"> 
 		<title>Menu La palette du goût</title>
 	</head>
+
 	<body>
+
 		<!-- entete  -->
 		<header>
 			<nav>
-				<a href="index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+				<a href="index.html"><i class="fas fa-arrow-left"></i></a>
 				<img src="images/logo/ohmyfood.svg" alt="logo ohmyfood" id="logo"/>
 			</nav>
 		</header>
-		<img class="menu_pict" src="images/restaurants/palette_gout.jpg" alt=photo_palette_gout/>
-		<div class="menu_background">
+
+		<img class="menu_img" src="images/restaurants/palette_gout.jpg" alt=photo_palette_gout/>
+		
+		<!-- menu  -->
+		<div class="menu_bg">
 			<div class="menu_titre">
 				<h1>La palette du goût</h1>
-				<a href="#" class="favorite">
+				<a href="#" class="favori">
 					<div class="heart">
 						<i class="far fa-heart fa-2x"></i>
 					</div>
-					<div class="favorite__bg">
+					<div class="favori__bg">
 						<i class="fas fa-heart fa-2x"></i>
 					</div>
 				</a>
 			</div>
-		<!-- menu  -->
+
+			<!-- Sous-menu entrees  -->
 			<div class="sous_menu_titre">
 				<p>
 					 ENTRÉES
@@ -91,6 +97,8 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- Sous-menu plats  -->
 			<div class="sous_menu_titre">
 				<p>
 					 PLATS
@@ -152,6 +160,8 @@
 					</div>
 				</div>
 			</div>
+			
+			<!-- Sous-menu desserts  -->
 			<div class="sous_menu_titre">
 				<p>
 					 DESSERTS
@@ -213,7 +223,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="command">
+			<div class="commande">
 				<a href="#" class="button">
 					<div class="button__name">
 						<strong>Commander</strong>
@@ -221,25 +231,28 @@
 				</a>
 			</div>
 		</div>
-		<!-- pied de page -->
+		
+		<!-- Pied de page -->
 		<footer>
 			<h2>ohmyfood</h2>
-			<p>
-				<a href="#">
-					<strong><i class="fas fa-utensils"></i>Proposer un restaurant</strong>
-				</a>
-			</p>
-			<p>
-				<a href="#">
-					<strong><i class="fas fa-hands-helping"></i>Devenir partenaire</strong>
-				</a>
-			</p>
-			<p>
-				<a href="#"><strong>Mentions légales</strong></a>
-			</p>
-			<p>
-				<a href="mailto:xxxx@yz.fr"><strong>Contact</strong></a>
-			</p>
+			<ul>
+				<li>
+					<a href="#">
+					<p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+					</a>
+				</li>
+				<li>
+					<a href="#"><p>Mentions légales</p></a>
+				</li>
+				<li>
+					<a href="mailto:xxxx@yz.fr"><p>Contact</p></a>
+				</li>
+			</ul>
 		</footer>
 	</body>
 </html>

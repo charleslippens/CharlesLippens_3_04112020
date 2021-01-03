@@ -1,19 +1,23 @@
 /* Introduction */
 
-.introduction_page {
+.introduction {
 	background-color: $color-bg;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px 50px 50px 30px;
+	padding: 20px 30px 50px 30px;
+	height:220px;
+	@media (min-width: 768px){
+		height:200px;
+	}
 }
 
-#titre_page {
+#titre {
 	text-align: center;
 	& h1 {
-		font-size: 1.3em;
-		padding-right: 40px;
-		padding-left: 40px;
+		font-size: 1.5em;
+		padding-right: 30px;
+		padding-left: 30px;
 		@media (min-width: 768px) 
 		{
 			font-size: 2.5em;
@@ -21,108 +25,9 @@
 			padding-left: 10px;
 			margin-bottom: 0px;
 		}
-		}
-	& p{
-			font-size: 1em;
-			margin-bottom: 20px;
-		}
-}
-
-
-#fonctionnement {
-	max-width:1220px;
-	 margin:auto;
-	& h2 {
-		font-weight: bold;
-		font-size: 1.5em;
-		padding-left: 37px;
-		@media (min-width: 992px) {
-			padding-left: 26px;
-		}
 	}
-}
-
-#all_etape {
-	display: flex;
-	flex-direction: column;
-		@media (min-width: 768px) {
-			flex-direction: row;
-			margin-right: 20px;
-			margin-top: 35px;
-		}
-}
-
-.etape {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 96%;
-	margin-bottom: 30px;
-		
-		&__number {
-			background-color: $color-primary;
-			border-radius: 15px;
-			height: 30px;
-			width: 30px;
-			color: #fff;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			position: relative;
-			left: 15px;
-			
-		}
-		&__bg {
-			background-color: $color-bg;
-			display: flex;
-			align-items: center;
-			width: 85%;
-			height: 80px;
-			border-radius: 20px;
-			box-shadow: 5px 5px 5px #ececec;
-				& .fa-mobile-alt {
-					font-size: 1.5em;
-					opacity: 0.8;
-					margin-left: 35px;
-					margin-right: 9px;
-				}
-				& .fa-list-ul {
-					font-size: 1.5em;
-					opacity: 0.8;
-					margin-left: 35px;
-				}
-				& .etape__titre {
-					font-size: 15px;
-					padding-left: 15px;
-					padding-right: 5px;
-					@media screen and (min-width: 768px) {
-						padding-left: 20px;
-					}
-				}
-		}
-		&__bg_2 {
-			background-color: lighten($color-primary, 35%);
-			display: flex;
-			align-items: center;
-			width: 85%;
-			height: 80px;
-			border-radius: 20px;
-			box-shadow: 5px 5px 5px #ececec;
-				& .fa-store {
-					font-size: 1.5em;
-					color: $color-primary;
-					opacity: 0.8;
-					margin-left: 35px;
-					margin-right: -5px;
-				}
-				& .etape__titre {
-					font-size: 15px;
-					padding-left: 15px;
-					padding-right: 5px;
-					@media screen and (min-width: 768px) {
-						padding-left: 20px;
-					}
-				}
-		}
-
+	& p{
+			font-size: 1.1em;
+			margin-bottom: 20px;
+	}
 }

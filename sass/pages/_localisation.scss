@@ -1,0 +1,19 @@
+/* general */
+
+/* Retire la flèche de l'entête pour la page d'accueil */
+.accueil .fa-arrow-left {
+    display: none; 
+}
+
+#geolocalisation {
+	display: flex;
+	background-color: #ececec;
+	justify-content: center;
+	align-items: baseline;
+	box-shadow: inset 0px 5px 5px -5px #A2A2A2;
+	height: 50px;
+}
+
+.fa-map-marker-alt {
+	margin-right: 20px;
+}
