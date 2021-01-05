@@ -121,12 +121,12 @@
 	}
 	&:hover {
 		& .favori__bg {
-			animation: fondu_heart 1800ms;
+			animation: fondu_heart 2s;
 			animation-fill-mode: forwards;
 		}
 		& .heart {
 			opacity: 0;
-			transition: opacity 1800ms;
+			transition: opacity 2s;
 		}	
 	}
 }

@@ -21,7 +21,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      animation: spinner 1s linear 2;   /* Durée 1 tour et nbre de tours */
+      animation: spinner_animation 1s linear 2;   /* Durée 1 tour et nbre de tours */
       @for $i from 1 through 12{
         &:nth-child(#{$i}) {
           animation-delay: #{($i - 1)/15}s;
@@ -34,7 +34,7 @@
   }
 
   /* Taille et couleur des éléments du spinner */
-@keyframes spinner {
+@keyframes spinner_animation {
   0%, 20%, 80% {
     transform: scale(1);
     background: $color-secondary;
@@ -49,7 +49,7 @@
   }
 }
 
-  /* Apparition progressive de la page d'accuiel en fin de spinner */
+  /* Apparition progressive de la page d'accueil en fin de spinner */
 @keyframes spinner_bg {
   0%, 80% {   
     background: $color-bg;
